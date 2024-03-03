@@ -1,4 +1,4 @@
-<header class="bg-home-hero-pattern bg-bottom h-[40vh] flex flex-col">
+<header class="bg-home-hero-pattern bg-cover bg-center h-[40vh] flex flex-col">
     <livewire:navigation/>
     <div
         class="bg-white bg-opacity-40 shadow-2xl rounded-xl h-[18rem] w-[54rem] text-white
