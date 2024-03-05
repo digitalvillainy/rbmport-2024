@@ -7,15 +7,15 @@
 ])>
     <livewire:navigation/>
     <div
-        class="bg-slate-400 bg-opacity-60 shadow-2xl rounded-xl h-[18rem] w-[54rem] text-white
-        self-center my-32 font-extrabold text-center"
+        class="bg-slate-400 bg-opacity-70 shadow-2xl rounded-xl h-[18rem] w-[54rem] text-white
+        self-center my-32 font-extrabold text-center text-shadow"
     >
         <div class="flex flex-col justify-center min-h-full w-full mx-auto text-center space-y-5">
             <h1 class="text-[#282662] text-5xl border-[#282662] border-b-8 w-fit mx-auto text-shadow">
-                WE MAKE WEBSITES
+                {{$banner['title']}}
             </h1>
             <p class="text-3xl text-shadow-lg">
-                Whether that’s building from scratch or augmenting your current team
+                {{$banner['msg']}}
             </p>
         </div>
     </div>
