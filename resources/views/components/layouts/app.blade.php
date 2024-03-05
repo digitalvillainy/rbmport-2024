@@ -1,3 +1,6 @@
+@php
+    $path = Route::current()->uri;
+@endphp
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -8,10 +11,15 @@
     </head>
     <body class="flex flex-col min-h-screen">
     <livewire:header/>
-    {{--TODO: Extract into class--}}
-    <main class="mb-auto flex-auto bg-[#5F627E]">
-        {{ $slot }}
-    </main>
+        <main @class([
+            "bg-[#5F627E]" => $path === '/',
+            "bg-[#3F3D56]" => $path === 'hire-a-dev',
+            "bg-[#22222E]" => $path === 'contact',
+            "bg-[#13131C]" => $path === 'blog',
+            "mb-auto flex-auto"
+        ])>
+            {{ $slot }}
+        </main>
     <livewire:footer/>
     </body>
 </html>

@@ -6,6 +6,7 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Support\Carbon;
 use Livewire\Component;
 
+//TODO: Add MailChimp newsletter Functionality
 class Footer extends Component
 {
     public string $now;
