@@ -1,4 +1,4 @@
-<header @class([
+<header id="top" @class([
     'border-b-[#FFCC00] bg-home-hero-pattern' => $path === '/',
     'border-b-[#AA0000] bg-hired-hero-pattern' => $path === 'hire-a-dev',
     'border-b-[#662E8D] bg-contact-hero-pattern' => $path === 'contact',

@@ -2,12 +2,23 @@
 
 namespace App\Livewire;
 
+use Illuminate\Contracts\View\View;
+use Illuminate\Support\Carbon;
 use Livewire\Component;
 
 class Footer extends Component
 {
-    public function render()
+    public string $now;
+
+    public function mount()
     {
-        return view('livewire.footer');
+        $this->now = Carbon::now()->year;
+    }
+
+    public function render(): View
+    {
+        return view('livewire.footer',[
+            'year'=>$this->now
+        ]);
     }
 }
