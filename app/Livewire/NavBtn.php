@@ -22,10 +22,10 @@ class NavBtn extends Component
         $this->active = $path === $this->title || $path === $this->routeToCurrent;
         $this->btnName = ucwords(str_replace('-', ' ', $this->title));
         $this->color = [
-            '/' => '#FFCC00',
-            'hire-a-dev' => '#AA0000',
-            'contact' => '#662E8D',
-            'blog' => '#ffffff'
+            '/' => 'bg-[#21222D] rounded-xl border-2 border-[#FFCC00] shadow-2xl',
+            'hire-a-dev' => 'bg-[#21222D] rounded-xl border-2 border-[#AA0000] shadow-2xl',
+            'contact' => 'bg-[#21222D] rounded-xl border-2 border-[#662E8D] shadow-2xl',
+            'blog' => 'bg-[#21222D] rounded-xl border-2 border-white shadow-2xl'
         ][$path];
     }
 
@@ -35,7 +35,7 @@ class NavBtn extends Component
             'routeHref' => $this->routeToCurrent,
             'active' => $this->active,
             'btnName' => $this->btnName,
-            'color' => $this->color
+            'current' => $this->color
         ]);
     }
 }

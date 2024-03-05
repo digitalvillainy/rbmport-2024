@@ -8,23 +8,21 @@ use Livewire\Component;
 
 class Header extends Component
 {
-    public string $color;
+    public string $path;
+    public string $locationTitle;
 
-    public function mount()
+    public function mount(): void
     {
-        $path = Route::current()->uri;
-        $this->color = [
-            '/' => '#FFCC00',
-            'hire-a-dev' => '#AA0000',
-            'contact' => '#662E8D',
-            'blog' => 'white'
-        ][$path];
+        $this->path = Route::current()->uri;
+        $title = str_contains($this->path, '/') ? 'build-a-site' : $this->path;
+        $this->locationTitle = strtoupper(str_replace('-', ' ', $title));
     }
 
     public function render(): View
     {
         return view('livewire.header', [
-            'headerColor' => $this->color
+            'path' => $this->path,
+            'title' => $this->locationTitle
         ]);
     }
 }

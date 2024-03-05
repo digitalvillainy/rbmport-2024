@@ -1,4 +1,10 @@
-<header class="bg-home-hero-pattern bg-cover bg-center h-[50vh] flex flex-col border-b-8 border-b-{{$headerColor}} relative">
+<header @class([
+    'border-b-[#FFCC00]' => $path === '/',
+    'border-b-[#AA0000]' => $path === 'hire-a-dev',
+    'border-b-[#662E8D]' => $path === 'contact',
+    'border-b-[#ffffff]' => $path === 'blog',
+    "bg-home-hero-pattern bg-cover bg-center h-[50vh] flex flex-col border-b-8 relative"
+])>
     <livewire:navigation/>
     <div
         class="bg-white bg-opacity-40 shadow-2xl rounded-xl h-[18rem] w-[54rem] text-white
@@ -13,6 +19,14 @@
     </div>
 
     <div class="flex justify-end">
-        <span class="text-5xl font-bold absolute -bottom-12 text-{{$headerColor}} text-right">BUILD A SITE</span>
+        <span @class([
+            'text-[#FFCC00]' => $path === '/',
+            'text-[#AA0000]' => $path === 'hire-a-dev',
+            'text-[#662E8D]' => $path === 'contact',
+            'text-white' => $path === 'blog',
+            "text-5xl font-bold absolute -bottom-12 text-right"
+        ])>
+            {{$title}}
+        </span>
     </div>
 </header>
