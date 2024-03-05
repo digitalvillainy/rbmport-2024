@@ -1,6 +1,7 @@
 <footer class="flex flex-col justify-center bg-white bg-opacity-45 pt-6 px-4">
     <div class="flex flex-col w-6/12 mx-auto">
         <p class="text-center">Sign up for our newsletter</p>
+        <label for="email"></label>
         <input type="email" name="email" id="email">
         <input type="button" value="subscribe">
     </div>
