@@ -1,3 +1,4 @@
-<div>
-    {{-- Nothing in the world is as soft and yielding as water. --}}
-</div>
+<section>
+    {{--TODO: Examples of content cards--}}
+    <x-blog-card :title="$title" :content="$content" direction="horizontal"/>
+</section>

@@ -1,4 +1,5 @@
 <section class="my-32 grid justify-center">
+    {{--TODO: take from backend of blog--}}
    <article class="space-y-8">
        <div class="">
            <h5 class="text-3xl text-yellow-500 underline font-bold">
@@ -25,6 +26,7 @@
            </p>
        </div>
    </article>
+    {{--TODO: Update to email me directly--}}
     <form action="email" method="post"
           class="mt-16 pb-12 pt-16 border-t-4 border-t-red-800 grid justify-center space-y-4
           w-8/12 mx-auto bg-[#13131C] relative shadow-xl"
