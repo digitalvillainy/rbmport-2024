@@ -3,7 +3,7 @@
     'content',
     'direction'
 ])
-
+{{--TODO: finish direction flow--}}
 <article {{ $attributes->class(['mt-16 pb-12 pt-16 border-l-8 border-l-red-700 grid justify-center space-y-4
                    w-8/12 mx-auto bg-gradient-to-r to-[#22222E] from-[#3F3D56] relative shadow-lg']) }}
 >
