@@ -1,7 +1,7 @@
 <section class="flex flex-row my-32 mx-auto w-6/12 space-x-6">
     <img src="{{asset('./images/profile-pic.jpeg')}}"
          alt="Roberto Rivera"
-         class="h-52 w-auto rounded-tr-2xl rounded-bl-2xl shadow-xl">
+         class="h-52 w-auto rounded-tr-2xl rounded-bl-2xl shadow-2xl">
     <article class="flex flex-col w-full text-white">
         <p class="font-bold h-52 w-9/12 mx-auto">
             Hi, my name is Roberto Rivera and I’ve been a Full-Stack web developer since 2018. During that time I
