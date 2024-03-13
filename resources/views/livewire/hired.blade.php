@@ -12,10 +12,13 @@
             <div>
                 <h5 class="text-4xl font-extrabold w-full text-center">Languages</h5>
                 <div class="flex flex-row flex-wrap space-x-6 justify-center mt-4 mb-16 justify-between">
-                    <x-lang-box title="HTML 5" img-src="./hired-icons/languages/html-5.svg" img-alt="HTML 5 icon" img-des="HTML 5"/>
+                    <x-lang-box title="HTML 5" img-src="./hired-icons/languages/html-5.svg" img-alt="HTML 5 icon"
+                                img-des="HTML 5"/>
                     <x-lang-box title="CSS" img-src="./hired-icons/languages/css.svg" img-alt="CSS icon" img-des="CSS"/>
-                    <x-lang-box title="JavaScript" img-src="./hired-icons/languages/JavaScript.svg" img-alt="JavaScript icon" img-des="JavaScript"/>
-                    <x-lang-box title="Typescript" img-src="./hired-icons/languages/Typescript.svg" img-alt="Typescript icon" img-des="Typescript"/>
+                    <x-lang-box title="JavaScript" img-src="./hired-icons/languages/JavaScript.svg"
+                                img-alt="JavaScript icon" img-des="JavaScript"/>
+                    <x-lang-box title="Typescript" img-src="./hired-icons/languages/Typescript.svg"
+                                img-alt="Typescript icon" img-des="Typescript"/>
                     <x-lang-box img-src="./hired-icons/languages/php.svg" img-alt="PHP icon" img-des="PHP"/>
                     <x-lang-box img-src="./hired-icons/languages/MySql.svg" img-alt="MySql icon" img-des="MySql icon"/>
                 </div>
@@ -23,23 +26,34 @@
             <div>
                 <h5 class="text-4xl font-extrabold w-full text-center">Libraries & Frameworks</h5>
                 <div class="flex flex-row flex-wrap space-x-6 justify-center mt-4 mb-16 justify-between">
-                    <x-lang-box title="React" img-src="./hired-icons/libraries/react.svg" img-alt="React icon" img-des="React"/>
+                    <x-lang-box title="React" img-src="./hired-icons/libraries/react.svg" img-alt="React icon"
+                                img-des="React"/>
                     <x-lang-box title="Vue" img-src="./hired-icons/libraries/vue.svg" img-alt="Vue icon" img-des="Vue"/>
-                    <x-lang-box title="Tailwind" img-src="./hired-icons/libraries/tailwind.svg" img-alt="Tailwind icon" img-des="Tailwind"/>
-                    <x-lang-box title="Bootstrap" img-src="./hired-icons/libraries/bootstrap.svg" img-alt="Bootstrap icon" img-des="Bootstrap"/>
-                    <x-lang-box title="Alpine.js" img-src="./hired-icons/libraries/alpine.svg" img-alt="Alpine.js icon" img-des="Alpine"/>
-                    <x-lang-box title="Laravel" img-src="./hired-icons/libraries/laravel.svg" img-alt="Laravel icon" img-des="Laravel"/>
+                    <x-lang-box title="Tailwind" img-src="./hired-icons/libraries/tailwind.svg" img-alt="Tailwind icon"
+                                img-des="Tailwind"/>
+                    <x-lang-box title="Bootstrap" img-src="./hired-icons/libraries/bootstrap.svg"
+                                img-alt="Bootstrap icon" img-des="Bootstrap"/>
+                    <x-lang-box title="Alpine.js" img-src="./hired-icons/libraries/alpine.svg" img-alt="Alpine.js icon"
+                                img-des="Alpine"/>
+                    <x-lang-box title="Laravel" img-src="./hired-icons/libraries/laravel.svg" img-alt="Laravel icon"
+                                img-des="Laravel"/>
                 </div>
             </div>
             <div>
                 <h5 class="text-4xl font-extrabold w-full text-center">Software & Tools</h5>
                 <div class="flex flex-row flex-wrap space-x-6 justify-center mt-4 mb-16 justify-between">
-                    <x-lang-box title="GitHub" img-src="./hired-icons/software/github.svg" img-alt="Github icon" img-des="Github"/>
-                    <x-lang-box title="Git" img-src="./hired-icons/software/git.svg" img-alt="Github icon" img-des="Git"/>
-                    <x-lang-box title="Apache" img-src="./hired-icons/software/apache.svg" img-alt="Apache icon" img-des="Apache"/>
-                    <x-lang-box title="Docker" img-src="./hired-icons/software/docker.svg" img-alt="Docker icon" img-des="Docker"/>
-                    <x-lang-box title="Figma" img-src="./hired-icons/software/figma.svg" img-alt="Figma icon" img-des="Figma"/>
-                    <x-lang-box title="StoryBook" img-src="./hired-icons/software/storybook.svg" img-alt="Storybook icon" img-des="Storybook"/>
+                    <x-lang-box title="GitHub" img-src="./hired-icons/software/github.svg" img-alt="Github icon"
+                                img-des="Github"/>
+                    <x-lang-box title="Git" img-src="./hired-icons/software/git.svg" img-alt="Github icon"
+                                img-des="Git"/>
+                    <x-lang-box title="Apache" img-src="./hired-icons/software/apache.svg" img-alt="Apache icon"
+                                img-des="Apache"/>
+                    <x-lang-box title="Docker" img-src="./hired-icons/software/docker.svg" img-alt="Docker icon"
+                                img-des="Docker"/>
+                    <x-lang-box title="Figma" img-src="./hired-icons/software/figma.svg" img-alt="Figma icon"
+                                img-des="Figma"/>
+                    <x-lang-box title="StoryBook" img-src="./hired-icons/software/storybook.svg"
+                                img-alt="Storybook icon" img-des="Storybook"/>
                 </div>
             </div>
         </div>

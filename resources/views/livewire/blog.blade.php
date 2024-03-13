@@ -6,14 +6,28 @@
     $blogImg = @asset('./images/blogImg.jpg');
 @endphp
 
-<section>
-    {{--TODO: Continue to work on direction="col" direction="row" be sure to test thoroughly--}}
-    <div class="h-3/4">
+<section class="flex flex-col my-32 mx-auto w-5/12">
+    <x-blog-card
+        :title="$title"
+        :content="$content"
+        :blog-link="$blogLink"
+        direction="row"
+        :blog-img="@asset('images/blogImg.jpg')"
+    />
+    <div class="flex flex-row mt-24 space-x-6">
         <x-blog-card
             :title="$title"
             :content="$content"
             :blog-link="$blogLink"
             direction="col"
-            :blog-img="@asset('images/blogImg.jpg')"/>
+            :blog-img="@asset('images/blogImg.jpg')"
+        />
+        <x-blog-card
+            :title="$title"
+            :content="$content"
+            :blog-link="$blogLink"
+            direction="col"
+            :blog-img="@asset('images/blogImg.jpg')"
+        />
     </div>
 </section>
