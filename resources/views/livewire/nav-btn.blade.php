@@ -1,3 +1,4 @@
+{{--TODO: make the active work on click rather than through current way--}}
 <li class="flex flex-col self-center">
     <a
         href="{{$routeHref}}"
