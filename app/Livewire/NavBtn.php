@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use Illuminate\Contracts\View\View;
+use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 use Livewire\Component;
 
@@ -22,18 +23,14 @@ class NavBtn extends Component
          * TODO: /contact should be going to href=#faq
          *
          * */
-        $current = str_contains($this->title, 'build-a-site') ? '/' : "/{$this->title}";
+//        $current = str_contains($this->title, 'build-a-site') ? '/' : "/{$this->title}";
         $this->path = Route::current()->uri;
-        $this->active = $this->path === $this->title || $this->path === $current;
+//        $this->active = $this->path === $this->title || $this->path === $current;
         $this->btnName = ucwords(str_replace('-', ' ', $this->title));
     }
 
     public function render(): View
     {
-        return view('livewire.nav-btn', [
-            'active' => $this->active,
-            'btnName' => $this->btnName,
-            'current' =>  $this->path
-        ]);
+        return view('livewire.nav-btn');
     }
 }
