@@ -22,14 +22,6 @@ class Header extends Component
                 'title' => 'WE MAKE WEBSITES',
                 'msg' => 'Whether that’s building from scratch or augmenting your current team.'
             ],
-            'hire-a-dev' => [
-                'title' => 'WE CAN AUGMENT YOUR TEAM',
-                'msg' => 'Does your project need a boost? Hire one of our developers.'
-            ],
-            'contact' => [
-                'title' => 'CONTACT US TODAY',
-                'msg' => 'Have a question about our services or have a special request?'
-            ],
             'blog' => [
                 'title' => 'EDUCATION ON WEB TECHNOLOGIES',
                 'msg' => 'Articles about web technologies and how they can help your business.'

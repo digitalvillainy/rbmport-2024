@@ -16,9 +16,6 @@
     <body class="flex flex-col min-h-screen">
     <livewire:header/>
         <main @class([
-            "bg-[#5F627E]" => $path === '/',
-            "bg-[#3F3D56]" => $path === 'hire-a-dev',
-            "bg-[#22222E]" => $path === 'contact',
             "bg-[#13131C]" => $path === 'blog',
             "mb-auto flex-auto"
         ])>

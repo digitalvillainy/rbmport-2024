@@ -1,8 +1,6 @@
 <?php
 
 use App\Livewire\Blog;
-use App\Livewire\Contact;
-use App\Livewire\Hired;
 use App\Livewire\Home;
 use Illuminate\Support\Facades\Route;
 
@@ -18,6 +16,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', Home::class);
-Route::get('/hire-a-dev', Hired::class);
-Route::get('/contact', Contact::class);
+Route::get('/#hired', Home::class);
+Route::get('/#faq', Home::class);
 Route::get('/blog', Blog::class);
