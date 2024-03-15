@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav-btn {
+    @apply  text-white font-bold px-3 py-2 w-32 text-center hover:bg-[#21222D] rounded-xl cursor-pointer;
+}
+
+.build-a-site-active {
+    @apply bg-[#21222D] border-2 border-[#FFCC00] shadow-2xl text-white font-bold px-3 py-2 w-32 text-center rounded-xl cursor-pointer;
+}
+
+.hire-a-dev-active {
+    @apply bg-[#21222D] border-2 border-[#AA0000] shadow-2xl text-white font-bold px-3 py-2 w-32 text-center rounded-xl cursor-pointer;
+}
+
+.contact-active {
+    @apply bg-[#21222D] border-2 border-[#662E8D] shadow-2xl text-white font-bold px-3 py-2 w-32 text-center rounded-xl cursor-pointer;
+}
+
+.blog-active {
+    @apply bg-[#21222D] border-2 border-white shadow-2xl text-white font-bold px-3 py-2 w-32 text-center rounded-xl cursor-pointer;
+}
