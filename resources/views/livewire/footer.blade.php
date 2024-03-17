@@ -1,21 +1,28 @@
-<footer class="flex flex-col justify-center bg-[#525470] bg-opacity-60 pt-6 pb-3 px-4 text-white">
+<footer class="flex flex-col justify-center bg-[#525470] bg-opacity-60 pt-6 pb-3 px-4 ">
     <div class="flex flex-col w-6/12 mx-auto">
         <form wire:submit="save" class="mx-auto my-4 w-6/12 flex flex-col">
-            <label for="email" class="text-center text-white mb-4">Sign up for our newsletter</label>
+            <label for="email" class="text-center text-white mb-4">
+                Sign up for our newsletter. We promise not to spam your account.
+            </label>
 
             <div class="flex flex-end shadow-xl">
                 <input type="email" name="email" id="email"
-                        placeholder="Enter Email Address..."
-                        class="w-full bg-[#525470] rounded-l-xl border-2 border-[#662E8D] font-bold pl-4"
+                       wire:model="email" placeholder="Enter Email Address..."
+                       class="w-full bg-[#525470] rounded-l-xl border-2 border-[#662E8D] font-bold pl-4 border-r-0 text-white"
                 >
-                <input type="submit" value="Subscribe"
-                       class="py-1 px-4 shadow-xl bg-[#21222D] rounded-r-xl border-2 border-[#662E8D] cursor-pointer"
+                <button type="submit"
+                        class="py-1 px-4 shadow-xl bg-[#21222D] rounded-r-xl border-2 border-[#662E8D] cursor-pointer border-l-0 text-white"
                 >
+                    Subscribe
+                </button>
+            </div>
+            <div>
+                @error('email') <span class="text-red-800">{{$message}}</span> @enderror
             </div>
         </form>
     </div>
     <div class="flex flex-row justify-between">
-        <span>Made By Red Banner Media 2020-{{$now}}</span>
+        <span class="text-white">Made By Red Banner Media 2020-{{$now}}</span>
         <ul class="flex flex-row justify-between content-center w-52">
             <li class="self-center cursor-pointer">
                 <a href="#top">

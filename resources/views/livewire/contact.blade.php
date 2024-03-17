@@ -33,28 +33,22 @@
           w-8/12 mx-auto bg-[#13131C] relative shadow-xl"
     >
         <h5 class="text-2xl text-red-800 font-bold absolute -top-2 right-0">LET'S TALK</h5>
-        <label for="name"></label>
-        <input
-            type="text"
-            name="name"
-            id="name"
-            class="w-full bg-[#525470] border-b-2 border-b-yellow-500 font-bold pl-4"
-        />
         <label for="email"></label>
         <input
             type="email"
             name="email"
             id="email"
-            class="w-full bg-[#525470] border-b-2 border-b-yellow-500 font-bold pl-4"
+            placeholder="Your email here..."
+            class="w-full bg-[#525470] border-b-2 border-b-yellow-500 font-bold pl-4 py-3"
         />
-        <label>
+        <label for="content">
             <textarea
                 name="content"
                 id="content"
                 cols="30"
                 rows="10"
                 placeholder="Write here..."
-                class="w-full bg-[#525470] border-b-2 border-b-yellow-500 font-bold pl-4"
+                class="w-full bg-[#525470] border-b-2 border-b-yellow-500 font-bold pl-4 pt-3"
             ></textarea>
         </label>
         <input type="submit" value="Value" class="text-white bg-green-800 rounded py-2">
