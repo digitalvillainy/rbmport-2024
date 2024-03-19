@@ -8,10 +8,10 @@
             <div class="flex flex-end shadow-xl">
                 <input type="email" name="email" id="email"
                        wire:model="email" placeholder="Enter Email Address..."
-                       class="w-full bg-[#525470] rounded-l-xl border-2 border-[#662E8D] font-bold pl-4 border-r-0 text-white"
+                       class="w-full bg-[#525470] border-2 border-[#662E8D] font-bold pl-4 border-r-0 text-white"
                 >
                 <button type="submit"
-                        class="py-1 px-4 shadow-xl bg-[#21222D] rounded-r-xl border-2 border-[#662E8D] cursor-pointer border-l-0 text-white"
+                        class="py-1 px-4 shadow-xl bg-[#21222D] border-2 border-[#662E8D] cursor-pointer border-l-0 text-white"
                 >
                     Subscribe
                 </button>

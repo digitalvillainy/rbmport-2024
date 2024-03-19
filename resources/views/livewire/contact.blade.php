@@ -1,6 +1,5 @@
 <section id="faq" class="py-32 grid justify-center bg-[#22222E] border-t-4 border-t-[#662E8D] relative">
     <div class="text-[#662E8D] flex justify-end text-5xl font-bold absolute -top-2 right-1">FAQ</div>
-    {{--TODO: take from backend of blog--}}
     <article class="space-y-8">
         <div class="">
             <h5 class="text-3xl text-yellow-500 underline font-bold">
@@ -28,7 +27,7 @@
         </div>
     </article>
     {{--TODO: Update to email me directly--}}
-    <form action="email" method="post"
+    <form wire:submit="contact"
           class="mt-16 pb-12 pt-16 border-t-4 border-t-red-800 grid justify-center space-y-4
           w-8/12 mx-auto bg-[#13131C] relative shadow-xl"
     >
@@ -38,6 +37,7 @@
             type="email"
             name="email"
             id="email"
+            wire:model="email"
             placeholder="Your email here..."
             class="w-full bg-[#525470] border-b-2 border-b-yellow-500 font-bold pl-4 py-3"
         />
@@ -47,10 +47,13 @@
                 id="content"
                 cols="30"
                 rows="10"
-                placeholder="Write here..."
+                wire:model="content"
+                placeholder="Write message here..."
                 class="w-full bg-[#525470] border-b-2 border-b-yellow-500 font-bold pl-4 pt-3"
             ></textarea>
         </label>
-        <input type="submit" value="Value" class="text-white bg-green-800 rounded py-2">
+        <button type="submit" class="text-white bg-green-800 rounded py-2">
+            Send
+        </button>
     </form>
 </section>
