@@ -13,18 +13,24 @@ class Contact extends Component
     #[Validate('required|email')]
     public string $email;
 
-    #[Validate('required|max:1000')]
+    #[Validate('required')]
     public string $content;
 
-    public function contact(): void
+    public function contact(): string|array
     {
         $this->validate();
 
-        $result = (New ClientMailController)->sendClientMail(
-            'Client inquiry from:' . $this->email,
-            $this->content
-        );
-       ddd($result);
+        try {
+            (new ClientMailController)->sendClientMail(
+                'Client inquiry from: ' . $this->email,
+                $this->content
+            );
+
+            return ['contact', 'Succeeded in taking message'];
+        } catch (\Exception $e) {
+            return ['contact', 'Failed to send message, please try again later.'];
+        }
+
     }
 
     public function render(): View

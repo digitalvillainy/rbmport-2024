@@ -29,19 +29,25 @@
     {{--TODO: Update to email me directly--}}
     <form wire:submit="contact"
           class="mt-16 pb-12 pt-16 border-t-4 border-t-red-800 grid justify-center space-y-4
-          w-8/12 mx-auto bg-[#13131C] relative shadow-xl"
+          w-10/12 mx-auto bg-[#13131C] relative shadow-xl"
     >
-        <h5 class="text-2xl text-red-800 font-bold absolute -top-2 right-0">LET'S TALK</h5>
-        <label for="email"></label>
-        <input
-            type="email"
-            name="email"
-            id="email"
-            wire:model="email"
-            placeholder="Your email here..."
-            class="w-full bg-[#525470] border-b-2 border-b-yellow-500 font-bold pl-4 py-3"
-        />
-        <label for="content">
+        <div class="w-80 mx-auto">
+            <h5 class="text-2xl text-red-800 font-bold absolute -top-2 right-0">LET'S TALK</h5>
+            <label for="email"></label>
+            <input
+                type="email"
+                name="email"
+                id="email"
+                wire:model="email"
+                placeholder="Your email here..."
+                class="bg-[#525470] border-b-2 border-b-yellow-500 font-bold pl-4 py-3 w-full"
+            />
+        </div>
+        @error('email')
+        <p class="text-red-800">{{ $message }}</p>
+        @enderror
+        <div class="flex flex-col space-y-3 w-80 mx-auto">
+            <label for="content">
             <textarea
                 name="content"
                 id="content"
@@ -49,11 +55,19 @@
                 rows="10"
                 wire:model="content"
                 placeholder="Write message here..."
-                class="w-full bg-[#525470] border-b-2 border-b-yellow-500 font-bold pl-4 pt-3"
+                class="bg-[#525470] border-b-2 border-b-yellow-500 font-bold pl-4 pt-3 w-full"
             ></textarea>
-        </label>
-        <button type="submit" class="text-white bg-green-800 rounded py-2">
-            Send
-        </button>
+            </label>
+            <button type="submit" class="text-white bg-green-800 rounded py-2 w-full">
+                Send
+            </button>
+        </div>
+        @error('content')
+        <p class="text-red-800">{{ $message }}</p>
+        @enderror
+
+        @error('contact')
+        <p class="text-red-800">{{$message}}</p>
+        @enderror
     </form>
 </section>
