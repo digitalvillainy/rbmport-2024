@@ -39,13 +39,14 @@
                 CONTACT
             </a>
         </li>
-        <li class="flex flex-col self-center">
-            <a
-                :class="current === '/blog' ? 'blog-active' : 'nav-btn' "
-                href="/blog"
-            >
-                BLOG
-            </a>
-        </li>
+{{--TODO: Fix when Blog is ready--}}
+{{--        <li class="flex flex-col self-center">--}}
+{{--            <a--}}
+{{--                :class="current === '/blog' ? 'blog-active' : 'nav-btn' "--}}
+{{--                href="/blog"--}}
+{{--            >--}}
+{{--                BLOG--}}
+{{--            </a>--}}
+{{--        </li>--}}
     </ul>
 </nav>

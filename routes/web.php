@@ -16,4 +16,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', Home::class);
-Route::get('/blog', Blog::class);
+//Route::get('/blog', Blog::class);

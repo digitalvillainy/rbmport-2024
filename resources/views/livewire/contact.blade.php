@@ -26,7 +26,6 @@
             </p>
         </div>
     </article>
-    {{--TODO: Update to email me directly--}}
     <form wire:submit="contact"
           class="mt-16 pb-12 pt-16 border-t-4 border-t-red-800 grid justify-center space-y-4
           w-10/12 mx-auto bg-[#13131C] relative shadow-xl"
