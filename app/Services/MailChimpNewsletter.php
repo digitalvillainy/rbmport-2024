@@ -10,6 +10,13 @@ class MailChimpNewsletter implements Newsletter
     {
     }
 
+    public function isEmailUnique(string $email): bool|int|string
+    {
+        $list ??= config('services.mailchimp.lists.subscribers');
+        $membersList = $this->client->lists->getListMembersInfo($list)->members;
+        return array_search($email, $membersList);
+    }
+
     public function subscribe(string $email, string $list = null): stdClass
     {
         $list ??= config('services.mailchimp.lists.subscribers');

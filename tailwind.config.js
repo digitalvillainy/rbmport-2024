@@ -1,5 +1,6 @@
     /** @type {import('tailwindcss').Config} */
     import plugin from "tailwindcss/plugin";
+    import colors from "tailwindcss/colors";
 
     export default {
   content: [
@@ -9,11 +10,11 @@
   ],
   theme: {
     extend: {
+        colors:{
+            ...colors
+        },
         backgroundImage: {
             "home-hero-pattern": "url('/public/images/code-2400-1600.jpg')",
-            "hired-hero-pattern": "url('/public/images/hired-2400-1600.jpg')",
-            "contact-hero-pattern": "url('/public/images/contact-2400-1600.jpg')",
-            "blog-hero-pattern": "url('/public/images/blog-2400-1600.jpg')",
         },
         textShadow: {
             sm: '0 1px 2px var(--tw-shadow-color)',
