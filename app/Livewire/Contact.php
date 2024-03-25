@@ -3,8 +3,8 @@
 namespace App\Livewire;
 
 use App\Http\Controllers\ClientMailController;
+use App\Services\Newsletter;
 use Illuminate\Contracts\View\View;
-use Livewire\Attributes\Title;
 use Livewire\Attributes\Validate;
 use Livewire\Component;
 
@@ -15,8 +15,26 @@ class Contact extends Component
 
     #[Validate('required')]
     public string $content;
+    public bool $show = false;
+    protected $listeners = ['likeUpdated', 'subscribed'];
 
-    public function contact(): string|array
+    public function toggleDispatch(string $mode, bool $show): void
+    {
+        $this->dispatch(
+            'subscribed',
+            mode: $mode,
+            show: $show,
+            toastType: 'email'
+        );
+    }
+
+    public function likeUpdated(): void
+    {
+        $this->toggleDispatch('error', false);
+        $this->resetErrorBag();
+    }
+
+    public function contact(): void
     {
         $this->validate();
 
@@ -25,10 +43,12 @@ class Contact extends Component
                 'Client inquiry from: ' . $this->email,
                 $this->content
             );
-
-            return ['contact', 'Succeeded in taking message'];
+            $this->toggleDispatch('success', true);
+            $this->email = '';
+            $this->content = '';
         } catch (\Exception $e) {
-            return ['contact', 'Failed to send message, please try again later.'];
+            $this->toggleDispatch('error', true);
+            $this->addError('contact', 'Failed to send message, please try again later.');
         }
 
     }

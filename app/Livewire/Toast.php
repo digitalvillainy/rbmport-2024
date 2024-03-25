@@ -24,10 +24,10 @@ class Toast extends Component
     {
         $this->mode = $mode;
         $this->show = $show;
+        $this->toastType = $toastType;
         $this->status = $this->setMode($mode);
         $this->title = $this->setTitle();
         $this->msg = $this->setMsg();
-        $this->toastType = $toastType;
     }
 
     public function toggleShow(): void

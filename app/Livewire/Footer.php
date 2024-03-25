@@ -5,8 +5,6 @@ namespace App\Livewire;
 use App\Services\Newsletter;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Carbon;
-use Illuminate\Validation\ValidationException;
-use Livewire\Attributes\On;
 use Livewire\Component;
 
 class Footer extends Component
@@ -14,7 +12,6 @@ class Footer extends Component
     public string $now;
     public string $email;
     public bool $show = false;
-    public string $toastType = 'newsletter';
     protected $listeners = ['likeUpdated', 'subscribed'];
 
     public function toggleDispatch(string $mode, bool $show): void

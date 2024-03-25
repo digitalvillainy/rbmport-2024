@@ -28,7 +28,7 @@
     </article>
     <form wire:submit="contact"
           class="mt-16 pb-12 pt-16 border-t-4 border-t-red-800 grid justify-center space-y-4
-          w-10/12 mx-auto bg-[#13131C] relative shadow-xl"
+                 text-white w-10/12 mx-auto bg-[#13131C] relative shadow-xl"
     >
         <div class="w-80 mx-auto">
             <h5 class="text-2xl text-red-800 font-bold absolute -top-2 right-0">LET'S TALK</h5>
