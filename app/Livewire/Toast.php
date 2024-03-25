@@ -15,21 +15,24 @@ class Toast extends Component
     public bool $show = false;
 
     public string $toastType;
-    public string $color;
     public string $title = '';
     public string $msg = '';
     protected Status $status;
 
-    //TODO: Fix issue with dynamic changing of colors
     #[On('subscribed')]
     public function reveal(string $mode, string $show, string $toastType): void
     {
-        $this->status = $this->setMode($mode);
+        $this->mode = $mode;
         $this->show = $show;
+        $this->status = $this->setMode($mode);
         $this->title = $this->setTitle();
         $this->msg = $this->setMsg();
-        $this->color = $this->setColor();
         $this->toastType = $toastType;
+    }
+
+    public function toggleShow(): void
+    {
+        $this->dispatch('likeUpdated');
     }
 
     public function setMode(string $mode): Status
@@ -39,11 +42,6 @@ class Toast extends Component
             'warning' => Status::WARNING,
             'error' => Status::ERROR,
         };
-    }
-
-    public function setColor(): string
-    {
-        return $this->status->color();
     }
 
     public function setTitle(): string

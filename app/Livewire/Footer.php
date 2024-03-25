@@ -2,56 +2,49 @@
 
 namespace App\Livewire;
 
-use App\Services\MailChimpNewsletter;
 use App\Services\Newsletter;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Carbon;
 use Illuminate\Validation\ValidationException;
-use Livewire\Attributes\Validate;
+use Livewire\Attributes\On;
 use Livewire\Component;
 
 class Footer extends Component
 {
     public string $now;
-    #[Validate('email')]
     public string $email;
     public bool $show = false;
-    public string $mode = 'error';
     public string $toastType = 'newsletter';
+    protected $listeners = ['likeUpdated', 'subscribed'];
+
+    public function toggleDispatch(string $mode, bool $show): void
+    {
+        $this->dispatch(
+            'subscribed',
+            mode: $mode,
+            show: $show,
+            toastType: 'newsletter'
+        );
+    }
+
+    public function likeUpdated(): void
+    {
+        $this->toggleDispatch('error', false);
+        $this->resetErrorBag();
+    }
 
     public function save(Newsletter $newsletter): void
     {
-        $this->validate();
-
-        $test = $newsletter->isEmailUnique($this->email);
-
-        if(!$test){
-            $this->dispatch(
-                'subscribed',
-                mode: 'warning',
-                show: true,
-                toastType: 'newsletter'
-            );
-            throw ValidationException::withMessages(['email' => 'This email has already registered with our newsletter.']);
+        if ($newsletter->isEmailUnique($this->email)) {
+            $this->toggleDispatch('error', true);
         } else {
             try {
                 $newsletter->subscribe($this->email);
-                $this->email = ''; // Clear email field after $newsletter subscription
-
-                $this->dispatch(
-                    'subscribed',
-                    mode: 'success',
-                    show: true,
-                    toastType: 'newsletter'
-                );
+                $this->reset('email');
+                $this->toggleDispatch('success', true);
             } catch (\Exception $e) {
-                $this->dispatch(
-                    'subscribed',
-                    mode: 'errors',
-                    show: true,
-                    toastType: 'newsletter'
-                );
-                throw ValidationException::withMessages(['email' => 'This email could not be added to our newsletter list.']);
+                $this->toggleDispatch('error', true);
+                $this->addError('email', 'This email could not be added to our newsletter list.');
             }
         }
     }

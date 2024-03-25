@@ -1,5 +1,5 @@
 <footer class="flex flex-col justify-center bg-[#525470] bg-opacity-60 pt-6 pb-3 px-4 ">
-    <livewire:toast :mode="$mode" :toastType="$toastType" :show="$show"/>
+    <livewire:toast :toastType="$toastType" :show="$show"/>
     <div class="flex flex-col w-6/12 mx-auto">
         <form wire:submit="save" class="mx-auto my-4 w-6/12 flex flex-col">
             <label for="email" class="text-center text-white mb-4">
