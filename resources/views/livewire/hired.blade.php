@@ -37,8 +37,8 @@
                         <x-lang-box title="Tailwind" img-src="./hired-icons/libraries/tailwind.svg"
                                     img-alt="Tailwind icon"
                                     img-des="Tailwind"/>
-                        <x-lang-box title="Bootstrap" img-src="./hired-icons/libraries/bootstrap.svg"
-                                    img-alt="Bootstrap icon" img-des="Bootstrap"/>
+                        <x-lang-box title="Livewire" img-src="./hired-icons/libraries/livewire.svg"
+                                    img-alt="Livewire icon" img-des="Livewire"/>
                         <x-lang-box title="Alpine.js" img-src="./hired-icons/libraries/alpine.svg"
                                     img-alt="Alpine.js icon"
                                     img-des="Alpine"/>
