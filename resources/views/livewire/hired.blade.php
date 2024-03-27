@@ -10,7 +10,7 @@
                 have learned that flexibility is key. Sometimes I get to make a website from scratch, other times I have
                 to dive into a established code base and work with what I have. Let’s see what I can do for you.
             </p>
-            <div class="w-10/12 xl:w-11/12 mx-auto xl:mt-24">
+            <div class="w-10/12 xl:w-11/12 3xl:w-9/12 mx-auto xl:mt-24">
                 <div>
                     <h5 class="text-4xl font-extrabold w-full text-center mb-8">Languages</h5>
                     <div class="flex flex-row flex-wrap space-x-1 xl:space-x-6 mx-auto mt-4 mb-16 justify-between">

@@ -1,5 +1,5 @@
 <section class="bg-[#5F627E]">
-    <section class="w-11/12 mx-auto py-5 xl:w-8/12 xl:mx-auto xl:py-32">
+    <section class="w-11/12 mx-auto py-5 xl:w-8/12 3xl:w-7/12 xl:mx-auto xl:py-32">
         <article class="flex flex-col my-20 xl:flex-row flex-wrap-reverse xl:flex-wrap space-y-3 xl:justify-between xl:my-36">
             <img src="{{asset('./icons/build-your-site.svg')}}" alt="Build Your site">
             <div class="xl:w-5/12">
