@@ -1,7 +1,7 @@
 <footer class="flex flex-col justify-center bg-[#525470] bg-opacity-60 pt-6 pb-3 px-4 ">
     <livewire:toast/>
-    <div class="flex flex-col w-6/12 mx-auto">
-        <form wire:submit="save" class="mx-auto my-4 w-6/12 flex flex-col">
+    <div class="flex flex-col w-full xl:w-6/12 mx-auto">
+        <form wire:submit="save" class="mx-auto my-4 w-full xl:w-6/12 flex flex-col">
             <label for="email" class="text-center text-white mb-4">
                 Sign up for our newsletter. We promise not to spam your account.
             </label>
@@ -22,9 +22,9 @@
             </div>
         </form>
     </div>
-    <div class="flex flex-row justify-between">
+    <div class="flex flex-col-reverse xl:flex-row justify-between">
         <span class="text-white">Made By Red Banner Media 2020-{{$now}}</span>
-        <ul class="flex flex-row justify-between content-center w-52">
+        <ul class="flex flex-row justify-between content-center w-full my-4">
             <li class="self-center cursor-pointer">
                 <a href="#top">
                     <img src="{{asset('./icons/arrow.svg')}}" alt="arrow up" class="h-12 w-12" title="Go To Top">

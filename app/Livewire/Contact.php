@@ -3,7 +3,6 @@
 namespace App\Livewire;
 
 use App\Http\Controllers\ClientMailController;
-use App\Services\Newsletter;
 use Illuminate\Contracts\View\View;
 use Livewire\Attributes\Validate;
 use Livewire\Component;

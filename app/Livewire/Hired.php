@@ -3,7 +3,7 @@
 namespace App\Livewire;
 
 use Illuminate\Contracts\View\View;
-use Livewire\Attributes\Title;
+use Livewire\Attributes\Lazy;
 use Livewire\Component;
 
 class Hired extends Component

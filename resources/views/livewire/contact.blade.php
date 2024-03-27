@@ -1,6 +1,6 @@
-<section id="faq" class="py-32 grid justify-center bg-[#22222E] border-t-4 border-t-[#662E8D] relative">
+<section id="faq" class="py-16 xl:py-32 grid justify-center bg-[#22222E] border-t-4 border-t-[#662E8D] relative">
     <div class="text-[#662E8D] flex justify-end text-5xl font-bold absolute -top-2 right-1">FAQ</div>
-    <article class="space-y-8">
+    <article class="w-10/12 mx-auto space-y-2">
         <div class="">
             <h5 class="text-3xl text-yellow-500 underline font-bold">
                 Do you charge per hour or per project?
@@ -28,9 +28,9 @@
     </article>
     <form wire:submit="contact"
           class="mt-16 pb-12 pt-16 border-t-4 border-t-red-800 grid justify-center space-y-4
-                 text-white w-10/12 mx-auto bg-[#13131C] relative shadow-xl"
+                 text-white w-11/12 xl:w-10/12 mx-auto bg-[#13131C] relative shadow-xl"
     >
-        <div class="w-80 mx-auto">
+        <div class="w-full flex flex-row justify-center xl:w-80 xl:mx-auto">
             <h5 class="text-2xl text-red-800 font-bold absolute -top-2 right-0">LET'S TALK</h5>
             <label for="email"></label>
             <input
@@ -39,14 +39,14 @@
                 id="email"
                 wire:model="email"
                 placeholder="Your email here..."
-                class="bg-[#525470] border-b-2 border-b-yellow-500 font-bold pl-4 py-3 w-full"
+                class="bg-[#525470] border-b-2 border-b-yellow-500 font-bold pl-4 py-3 w-10/12 xl:w-full"
             />
         </div>
         @error('email')
         <p class="text-red-800">{{ $message }}</p>
         @enderror
-        <div class="flex flex-col space-y-3 w-80 mx-auto">
-            <label for="content">
+        <div class="flex flex-col space-y-8 w-80 mx-auto">
+            <label for="content" class="flex flex-row justify-center">
             <textarea
                 name="content"
                 id="content"
@@ -54,10 +54,10 @@
                 rows="10"
                 wire:model="content"
                 placeholder="Write message here..."
-                class="bg-[#525470] border-b-2 border-b-yellow-500 font-bold pl-4 pt-3 w-full"
+                class="bg-[#525470] border-b-2 border-b-yellow-500 font-bold pl-4 pt-3 w-10/12"
             ></textarea>
             </label>
-            <button type="submit" class="text-white bg-green-800 rounded py-2 w-full">
+            <button type="submit" class="text-white bg-green-800 rounded py-2 w-10/12 mx-auto xl:w-full">
                 Send
             </button>
         </div>
