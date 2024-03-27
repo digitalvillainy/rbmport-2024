@@ -1,12 +1,12 @@
 <footer class="flex flex-col justify-center bg-[#525470] bg-opacity-60 pt-6 pb-3 px-4 ">
     <livewire:toast/>
     <div class="flex flex-col w-full xl:w-6/12 mx-auto">
-        <form wire:submit="save" class="mx-auto my-4 w-full xl:w-6/12 flex flex-col">
+        <form wire:submit="save" class="mx-auto my-4 w-full flex flex-col">
             <label for="email" class="text-center text-white mb-4">
                 Sign up for our newsletter. We promise not to spam your account.
             </label>
 
-            <div class="flex flex-end shadow-xl">
+            <div class="flex flex-end shadow-xl mx-auto w-10/12">
                 <input type="email" name="email" id="email"
                        wire:model="email" placeholder="Enter Email Address..."
                        class="w-full bg-[#525470] border-2 border-[#662E8D] font-bold pl-4 border-r-0 text-white"
@@ -22,9 +22,9 @@
             </div>
         </form>
     </div>
-    <div class="flex flex-col-reverse xl:flex-row justify-between">
-        <span class="text-white">Made By Red Banner Media 2020-{{$now}}</span>
-        <ul class="flex flex-row justify-between content-center w-full my-4">
+    <div class="flex flex-col-reverse md:flex-row justify-between">
+        <span class="text-white self-center">Made By Red Banner Media 2020-{{$now}}</span>
+        <ul class="flex flex-row justify-between content-center w-full md:w-3/12 xl:w-2/12 my-4">
             <li class="self-center cursor-pointer">
                 <a href="#top">
                     <img src="{{asset('./icons/arrow.svg')}}" alt="arrow up" class="h-12 w-12" title="Go To Top">

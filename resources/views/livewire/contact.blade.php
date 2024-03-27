@@ -54,7 +54,7 @@
                 rows="10"
                 wire:model="content"
                 placeholder="Write message here..."
-                class="bg-[#525470] border-b-2 border-b-yellow-500 font-bold pl-4 pt-3 w-10/12"
+                class="bg-[#525470] border-b-2 border-b-yellow-500 font-bold pl-4 pt-3 w-10/12 xl:w-full"
             ></textarea>
             </label>
             <button type="submit" class="text-white bg-green-800 rounded py-2 w-10/12 mx-auto xl:w-full">

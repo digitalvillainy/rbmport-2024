@@ -7,10 +7,10 @@
 ])>
     <livewire:navigation/>
     <div
-        class="bg-slate-400 bg-opacity-70 shadow-2xl rounded-xl xl:h-[18rem] xl:w-[54rem] text-white
+        class="bg-slate-400/80 shadow-2xl rounded-xl xl:h-[18rem] xl:w-[54rem] text-white
         self-center my-32 font-extrabold text-center text-shadow"
     >
-        <div class="flex flex-col justify-center min-h-full w-64 pt-3 px-3 xl:w-full mx-auto text-center space-y-5">
+        <div class="flex flex-col justify-center min-h-full w-64 md:w-9/12 md:py-3 xl:pt-3 px-3 xl:w-full mx-auto text-center space-y-5">
             <h1 class="text-[#282662] text-3xl xl:text-5xl border-[#282662] border-b-8 w-fit mx-auto text-shadow">
                 {{$banner['title']}}
             </h1>

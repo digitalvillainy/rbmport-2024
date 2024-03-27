@@ -1,19 +1,19 @@
 <section id="hired" class="py-32 bg-[#3F3D56] border-t-4 border-t-[#AA0000] relative">
     <div class="text-[#AA0000] flex justify-end text-5xl font-bold absolute -top-2 left-1">HIRE A DEV</div>
-    <div class="flex flex-col xl:space-x-6 xl:w-7/12 xl:mx-auto place-items-center">
+    <div class="flex flex-col xl:flex-row xl:space-x-6 xl:w-9/12 xl:mx-auto place-items-center">
         <img src="{{asset('./images/profile-pic.jpeg')}}"
              alt="Roberto Rivera"
-             class="h-48 w-52 xl:h-52 xl:w-auto rounded-tr-2xl rounded-bl-2xl shadow-2xl">
+             class="h-48 w-52 xl:h-52 self-start xl:w-auto rounded-tr-2xl rounded-bl-2xl shadow-2xl">
         <article class="flex flex-col w-full text-white">
             <p class="font-bold w-10/12 xl:w-9/12 mx-auto my-4">
                 Hi, my name is Roberto Rivera and I’ve been a Full-Stack web developer since 2018. During that time I
                 have learned that flexibility is key. Sometimes I get to make a website from scratch, other times I have
                 to dive into a established code base and work with what I have. Let’s see what I can do for you.
             </p>
-            <div class="w-8/12 xl:w-9/12 mx-auto">
+            <div class="w-10/12 xl:w-11/12 mx-auto xl:mt-24">
                 <div>
                     <h5 class="text-4xl font-extrabold w-full text-center mb-8">Languages</h5>
-                    <div class="flex flex-row flex-wrap space-x-1 xl:space-x-6 mt-4 mb-16 justify-between">
+                    <div class="flex flex-row flex-wrap space-x-1 xl:space-x-6 mx-auto mt-4 mb-16 justify-between">
                         <x-lang-box title="HTML 5" img-src="./hired-icons/languages/html-5.svg" img-alt="HTML 5 icon"
                                     img-des="HTML 5"/>
                         <x-lang-box title="CSS" img-src="./hired-icons/languages/css.svg" img-alt="CSS icon"
