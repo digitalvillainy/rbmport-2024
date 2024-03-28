@@ -1,7 +1,7 @@
 <nav class="flex px-5 bg-[#525470]/65 xl:relative h-20 shadow-2xl" >
     <div class="hidden xl:flex">
         <a href="/">
-            <img class="absolute -top-1 h-22 w-32 xl:h-28 xl:w-40 z-10" src="{{asset('./icons/rbm-logo.svg')}}"
+            <img class="absolute -top-1 h-22 w-32 xl:h-28 xl:w-40 z-10" src="{{asset('./images/rbm-logo.svg')}}"
                  alt="Red Banner Media, LLC Logo">
         </a>
         <ul x-data="{
@@ -56,7 +56,7 @@
         <a href="/" class="h-auto">
             <img
                 class="h-14 w-22"
-                src="{{asset('./icons/rbm-logo.svg')}}"
+                src="{{asset('./images/rbm-logo.svg')}}"
                 alt="Red Banner Media, LLC Logo"
             >
         </a>

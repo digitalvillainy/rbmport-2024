@@ -6,7 +6,7 @@
                 Sign up for our newsletter. We promise not to spam your account.
             </label>
 
-            <div class="flex flex-end shadow-xl mx-auto w-10/12 3xl:w-8/12">
+            <div class="flex flex-end shadow-xl w-full xl:mx-auto xl:w-10/12 3xl:w-8/12">
                 <input type="email" name="email" id="email"
                        wire:model="email" placeholder="Enter Email Address..."
                        class="w-full bg-[#525470] border-2 border-[#662E8D] font-bold pl-4 border-r-0 text-white"
