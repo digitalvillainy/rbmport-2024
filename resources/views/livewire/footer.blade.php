@@ -27,22 +27,22 @@
         <ul class="flex flex-row justify-between content-center w-full md:w-3/12 xl:w-2/12 my-4">
             <li class="self-center cursor-pointer">
                 <a href="#top">
-                    <img src="{{asset('./icons/arrow.svg')}}" alt="arrow up" class="h-12 w-12" title="Go To Top">
+                    <img src="{{asset('./images/arrow.svg')}}" alt="arrow up" class="h-12 w-12" title="Go To Top">
                 </a>
             </li>
             <li class="self-center cursor-pointer">
                 <a href="https://twitter.com/RBMDevs" target="_blank">
-                    <img src="{{asset('./icons/twitter.svg')}}" alt="Twitter" title="twitter">
+                    <img src="{{asset('./images/twitter.svg')}}" alt="Twitter" title="twitter">
                 </a>
             </li>
             <li class="self-center cursor-pointer">
                 <a href="https://github.com/Red-Banner-Media" target="_blank">
-                    <img src="{{asset('./icons/GitHub.svg')}}" alt="GitHub" title="github">
+                    <img src="{{asset('./images/GitHub.svg')}}" alt="GitHub" title="github">
                 </a>
             </li>
             <li class="self-center cursor-pointer">
                 <a href="https://www.linkedin.com/company/red-banner-media/" target="_blank">
-                    <img src="{{asset('./icons/linkedin.svg')}}" alt="LinkedIn" title="linkedin">
+                    <img src="{{asset('./images/linkedin.svg')}}" alt="LinkedIn" title="linkedin">
                 </a>
             </li>
         </ul>
