@@ -22,7 +22,7 @@
                 How much for an assessment?
             </h5>
             <p class="text-white font-bold">
-                Assessments are free! I like toe educate customers as best I can about what fits their business.
+                Assessments are free! I like to educate customers as best I can about what fits their business.
             </p>
         </div>
     </article>
